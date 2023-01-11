@@ -5,6 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "name": "Launch Extension",
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm",
+            "request": "launch",
+            "type": "extensionHost"
+        },
+        {
             "command": "npm start",
             "name": "Run npm start",
             "request": "launch",
@@ -13,7 +25,7 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open js4.html",
+            "name": "Open js5.html",
             "file": "c:\\Users\\User\\Desktop\\udemy\\css-js\\js4.html"
         }
     ]
