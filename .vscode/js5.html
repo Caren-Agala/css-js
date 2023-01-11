@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>js</title>
     <script language="javascript" type="text/javascript">
-        function sayHello()
-        {
-            document.write("hello there!");
-        }
+      function sayHello(name, age)
+      {
+          document.write(name + " is " + age + " years old.");
+      }
     </script>
-</head>
-<body>
+  </head>
+
+  <body>
     <p>Click this button to call the function</p>
-    <form action="">
-        <input type="button" onclick="sayHello()" value="say Hello">
+    <form>
+      <input name="t1" placeholder="Enter name" />
+      <br />
+      <input name="t2" placeholder="Enter age" />
+      <br />
+      <input
+        type="button"
+        onclick="sayHello(t1.value, t2.value)"
+        value="say Hello"
+      />
     </form>
-</body>
+  </body>
 </html>
